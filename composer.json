@@ -1,0 +1,32 @@
+{
+    "name": "abelousovva/laravel-log",
+    "description": "Laravel log package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alena Belousova",
+            "email": "alena.belavusava@mail.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/support": ">=5.4",
+        "psr/log": "1.0.*"
+    },
+   "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Abelousovva\\LaravelLog\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abelousovva\\LaravelLog\\Providers\\LaravelLogServiceProvider"
+            ],
+            "aliases": {
+                "LaravelLog": "Abelousovva\\LaravelLog\\Facedes\\Log"
+            }
+        }
+    }
+}
